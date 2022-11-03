@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align-Content</title>
+    <style>
+
+        .container{
+            height: 400px;
+            max-width: 300px;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;        
+        }
+
+        .item{
+            background-color: red;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Row</h1>
+    <p>Center Row</p>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem.</div>
+        <div class="item">Lorem ipsum.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+    </div>
+
+    <p>Stretch Row</p>
+    <div class="container stretch">
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">Lorem.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+    </div>
+
+    <p>Flex Start Row</p>
+    <div class="container flex-start">
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem.</div>
+        <div class="item">Lorem ipsum.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+    </div>
+
+    <p>Flex End Row</p>
+    <div class="container flex-end">
+        <div class="item">Lorem.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+    </div>
+
+    <p>Space Between Row</p>
+    <div class="container space-between">
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem.</div>
+        <div class="item">Lorem ipsum.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+    </div>
+
+    <p>Space Around Row</p>
+    <div class="container space-around">
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">Lorem.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+    </div>
+    
+
+    <h1>Column</h1>
+    <p>Center Column</p>
+    <div class="container center column">
+        <div class="item">Lorem ipsum.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+    </div>
+
+    <p>Stretch Column</p>
+    <div class="container stretch column">
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem.</div>
+        <div class="item">Lorem ipsum.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+    </div>
+
+    <p>Flex Start Column</p>
+    <div class="container flex-start column">
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">Lorem ipsum.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+    </div>
+
+    <p>Flex End Column</p>
+    <div class="container flex-end column">
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum.</div>
+        <div class="item">Lorem ipsum.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+    </div>
+
+    <p>Space Between Column</p>
+    <div class="container space-between column">
+        <div class="item">Lorem ipsum</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+    </div>
+
+    <p>Space Around Column</p>
+    <div class="container space-around column">
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">Lorem.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor.</div>
+        <div class="item">Lorem ipsum.</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align-Self</title>
+
+    <style>
+        .flex-container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .item{
+            background-color: midnightblue;
+            margin: 5px;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Row</h1>
+    <p>Auto</p>
+    <div class="flex-container">
+        <div class="item auto">AAAA</div>
+        <div class="item auto">BB</div>
+        <div class="item auto">C</div>
+        <div class="item auto">DEF</div>
+    </div>
+
+    <p>Center</p>
+    <div class="flex-container">
+        <div class="item center">AA</div>
+        <div class="item center">B</div>
+        <div class="item center">123</div>
+        <div class="item center">DDDDDD</div>
+    </div>
+
+    <p> Flex Start </p>
+    <div class="flex-container">
+        <div class="item start">A</div>
+        <div class="item start">BBB</div>
+        <div class="item start">123</div>
+        <div class="item start">HGBDF</div>
+    </div>
+
+
+    <p> Flex End</p>
+    <div class="flex-container">
+        <div class="item end">A</div>
+        <div class="item end">123</div>
+        <div class="item end">CDDD</div>
+        <div class="item end">EEEEEE</div>
+    </div>
+
+
+    <p>Baseline</p>
+    <div class="flex-container">
+        <div class="item baseline">A</div>
+        <div class="item baseline">CDCDCD</div>
+        <div class="item baseline">123</div>
+        <div class="item baseline">DD</div>
+    </div>
+
+
+    <p>Stretch</p>
+    <div class="flex-container">
+        <div class="item stretch">A</div>
+        <div class="item stretch">BB</div>
+        <div class="item stretch">C</div>
+        <div class="item stretch">QER</div>
+    </div>
+
+    <p>Mix</p>
+    <div class="flex-container">
+        <div class="item center">AAA</div>
+        <div class="item end">123</div>
+        <div class="item stretch">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+        <div class="item start">ITEM 4</div>
+    </div>
+
+    <h1>Column</h1>
+    <p>Auto</p>
+    <div class="flex-container column">
+        <div class="item auto">A</div>
+        <div class="item auto">BBB</div>
+        <div class="item auto">C</div>
+        <div class="item auto">123</div>
+    </div>
+
+    <p>Center</p>
+    <div class="flex-container column">
+        <div class="item center">123</div>
+        <div class="item center">B</div>
+        <div class="item center">CCCC</div>
+        <div class="item center">DD</div>
+    </div>
+
+    <p> Flex Start </p>
+    <div class="flex-container column">
+        <div class="item start">AQU</div>
+        <div class="item start">B</div>
+        <div class="item start">CCC</div>
+        <div class="item start">D</div>
+    </div>
+
+
+    <p> Flex End</p>
+    <div class="flex-container column">
+        <div class="item end">A</div>
+        <div class="item end">BBBB</div>
+        <div class="item end">CC</div>
+        <div class="item end">123456</div>
+    </div>
+
+
+    <p>Baseline</p>
+    <div class="flex-container column">
+        <div class="item baseline">A</div>
+        <div class="item baseline">GUAR</div>
+        <div class="item baseline">C</div>
+        <div class="item baseline">TEEEE</div>
+    </div>
+
+
+    <p>Stretch</p>
+    <div class="flex-container column">
+        <div class="item stretch">A</div>
+        <div class="item stretch">BBBBB</div>
+        <div class="item stretch">C</div>
+        <div class="item stretch">DD</div>
+    </div>
+
+    <p>Mix</p>
+    <div class="flex-container column">
+        <div class="item center">AAA</div>
+        <div class="item end">123</div>
+        <div class="item stretch">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+        <div class="item start">ITEM 4</div>
+    </div>
+
+
+</body>
+</html>
